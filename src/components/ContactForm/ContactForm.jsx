@@ -41,7 +41,7 @@ function ContactForm({ onAdd }) {
           id={nameId}
           name="name"
         ></Field>
-        <ErrorMessage name="name" as="span" />
+        <ErrorMessage className={css.message} name="name" />
         <label htmlFor={numberId}>Number</label>
         <Field
           className={css.field}
@@ -49,7 +49,7 @@ function ContactForm({ onAdd }) {
           id={numberId}
           name="number"
         ></Field>
-        <ErrorMessage name="number" as="span" />
+        <ErrorMessage className={css.message} name="number" />
         <button className={css.btn} type="submit">
           Add contact
         </button>
