@@ -1,8 +1,8 @@
 import { Formik, Form, Field } from 'formik';
 import { useId } from 'react';
-import css from '../SearchBar/SearchBar.module.css';
+import css from '../SearchBox/SearchBox.module.css';
 
-function SearchBar({ filter, onFilter }) {
+function SearchBox({ filter, onFilter }) {
   const searchId = useId();
 
   return (
@@ -24,4 +24,4 @@ function SearchBar({ filter, onFilter }) {
   );
 }
 
-export default SearchBar;
+export default SearchBox;

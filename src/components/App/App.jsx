@@ -1,5 +1,5 @@
 import ContactList from '../ContactList/ContactList';
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBox from '../SearchBox/SearchBox';
 import ContactForm from '../ContactForm/ContactForm';
 import { useState, useEffect } from 'react';
 
@@ -40,7 +40,7 @@ function App() {
       <div>
         <h1>Phonebook</h1>
         <ContactForm onAdd={addContact} />
-        <SearchBar value={filter} onFilter={setFilter} />
+        <SearchBox value={filter} onFilter={setFilter} />
         <ContactList data={visibleContacts} onDelete={deleteContact} />
       </div>
     </>
