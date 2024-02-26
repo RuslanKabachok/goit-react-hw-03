@@ -4,7 +4,6 @@ import ContactForm from '../ContactForm/ContactForm';
 import { useState, useEffect } from 'react';
 
 function App() {
-  // const [contacts, setContacts] = useState(initialConntacts);
   const [contacts, setContacts] = useState(() => {
     const savedContacts = window.localStorage.getItem('saved-contacts');
 
